@@ -1,0 +1,90 @@
+.services {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.services__caption{
+  color: map-get($colors,'primary-sky');
+}
+
+.services__title {
+  color: map-get($colors,'primary-blue');
+  margin-bottom: 100px;
+}
+
+.services__list {
+  width: 97.7%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.services__item {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 77px 40px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #0000001A;
+}
+
+.services__item--primary {
+  padding-top: 81px;
+  background: linear-gradient(12.95deg, rgba(48, 41, 215, 0.1) 22.55%, rgba(49, 42, 217, 0) 96.85%),
+              linear-gradient(12.95deg, rgba(48, 41, 217, 0.1) 22.55%, rgba(48, 41, 217, 0) 96.85%),
+              map-get($colors,'primary-white');
+}
+
+.services__item--secondary {
+  background: linear-gradient(12.95deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(12.95deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 0%),
+              map-get($colors,'primary-sky');
+}
+
+.services__item--tertiary {
+  background: linear-gradient(12.95deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 110.85%),
+              linear-gradient(12.95deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 0%),
+              map-get($colors,'primary-blue');
+}
+
+.services__image {
+  margin-bottom: 35px;
+}
+
+.services__image--primary {
+  margin-bottom: 30px;
+}
+
+.services__text {
+  @include text();
+  font-weight: map-get($font-weight,'medium');
+  color: map-get($colors,'primary-white');
+  margin-bottom: 20px;
+}
+
+.services__text-primary {
+  color: map-get($colors,'primary-blue');
+}
+
+.services__subtitle {
+  @include subtitle();
+  font-weight: map-get($font-weight,'bold');
+  color: map-get($colors,'primary-white');
+  margin-bottom: 20px;
+}
+
+.services__subtitle--primary {
+  color: map-get($colors,'primary-blue');
+}
+
+.services__paragraph {
+  @include text();
+  font-weight:  map-get($font-weight,'medium');
+  color: map-get($colors,'primary-white');
+  text-align: center;
+}
+
+.services__paragraph--primary {
+  color: map-get($colors,'primary-blue');
+}

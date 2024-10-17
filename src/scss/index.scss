@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "utils/reset";
+@import "./mixins/media-mixins";
+@import "./mixins/title-mixins";
+@import "mixins/typography-mixins";
+@import "utils/variables";
+@import "general";
+@import "Sections/header";
+@import "Sections/hero";
+@import "Sections/firm";
+@import "Sections/services";
+@import "Sections/features";
+@import "Sections/start";
+@import "Sections/news";
+@import "Sections/contact";
+@import "Sections/footer";

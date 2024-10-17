@@ -1,0 +1,54 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', serif;
+}
+
+.container {
+  width: 1192px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("../static/Image/Portrait-businessman.svg"),
+  url("../static/Image/Coins.svg"),
+  url("../static/Image/Background-image.svg");
+  background-repeat: no-repeat;
+  background-size: 60%, 60%, cover;
+  background-position: bottom 0 right 250px ,
+  bottom -30px right 50px,
+  center;
+}
+
+.hero__title {
+  font-weight: map-get($font-weight,'bold');
+  color: map-get($colors,'primary-white');
+  font-size: 9.4rem;
+  line-height: calc(128 / 94);
+  margin-bottom: 20px;
+}
+
+.caption {
+  @include subtitle();
+  font-weight: map-get($font-weight,'semibold');
+  margin-bottom: 10px;
+}
+
+.title {
+  @include title();
+  font-weight:  map-get($font-weight,'bold');
+}
+
+.center {
+  text-align: center;
+}
+
+

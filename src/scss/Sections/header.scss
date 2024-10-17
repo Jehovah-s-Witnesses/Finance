@@ -1,0 +1,93 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo__text {
+  font-weight: map-get($font-weight,'bold');
+  font-size: 2.2rem;
+  line-height: calc(33 / 22);
+}
+
+.logo__text-head {
+  color: map-get($colors,'primary-white');
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__link {
+  @include small-text;
+  font-weight:  map-get($font-weight,'semibold');
+  color:  map-get($colors,'primary-white');
+  opacity: 0.5;
+
+  &::after{
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22px;
+    height: 2px;
+    background-color: #FFFFFF;
+    opacity: 0;
+  }
+
+  &:hover, :focus {
+    font-weight: map-get($font-weight,'bold');
+    opacity: 1;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    font-weight: map-get($font-weight,'bold');
+    display: block;
+    content: attr(data-foo) '';
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+  }
+
+}
+
+.header__link--primary {
+  font-weight: map-get($font-weight,'bold');
+  opacity: 1;
+}
+
+.header__link {
+  &:hover.header__image {
+    background-color: map-get($colors,'primary-white');
+    opacity: 1;
+  }
+}
+
+
+.header__button {
+  @include small-text;
+  font-weight: map-get($font-weight,'semibold');
+  color: map-get($colors,'primary-white');
+  border: 1px solid map-get($colors,'primary-white');
+  min-width: 115px;
+  padding: 7px 10px;
+}

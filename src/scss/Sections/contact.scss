@@ -1,0 +1,32 @@
+.contact {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: map-get($colors,'secondary-blue');
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__caption {
+  color: map-get($colors, 'secondary-sky');
+}
+
+.contact__text {
+  @include title;
+  font-weight: map-get($font-weight,'bold');
+  color: map-get($colors,'primary-white');
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.contact__button {
+  @include small-text;
+  color: map-get($colors,'primary-white');
+  background-color: map-get($colors,'primary-sky') ;
+  width: 117px;
+  padding: 9px 19px;
+  border-radius: 4px;
+}
